@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/gymicon.jfif" alt="Icon Image" class="icon">
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleNav()">
+            &#9776;
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="product.html">Products</a>
+            <a href="blogs.html">Blogs</a>
+        </nav>
+
+        <a href="#" class="join-button" onclick="toggleForm()">Join Us</a>
+    </header>
+
+    <!-- Form Container -->
+    <div class="form-container" id="joinForm">
+        <button class="close-button" onclick="toggleForm()">Close</button>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Nutrition & Supplements Section -->
+    <div class="nutrition-section">
+        <h2 class="nutrition-heading">Nutritions & Supplements</h2>
+
+        <div class="nutrition-images">
+            <img src="images/wheyprotien.webp" alt="Whey Protein">
+            <img src="images/multivitamin.jpg" alt="Multivitamins">
+            <img src="images/preworkout.webp" alt="Pre Workouts">
+        </div>
+
+        <div class="nutrition-buttons">
+            <a href="#" class="nutrition-button">Whey Protein</a>
+            <a href="#" class="nutrition-button">Multivitamins</a>
+            <a href="#" class="nutrition-button">Pre Workouts</a>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        function toggleForm() {
+            var form = document.getElementById("joinForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+
+        function submitForm() {
+            // Implement form submission logic here
+            // For now, just close the form
+            toggleForm();
+        }
+
+        function toggleNav() {
+            // Implement toggleNav function if needed
+        }
+
+
+    </script>
+    <!-- Weights & Machines Section -->
+    <div class="section" style="background-image: url('productbackround2.jpg');">
+        <h2 class="section-heading">Weights & Machines</h2>
+
+        <div class="section-images">
+            <img src="images/treadmill1.jpg" alt="Treadmill">
+            <img src="images/freeweights.jpg" alt="Free Weight">
+            <img src="images/cable.jfif" alt="Cable Machine">
+        </div>
+
+        <div class="section-buttons">
+            <a href="#" class="section-button">Treadmill</a>
+            <a href="#" class="section-button">Free Weight</a>
+            <a href="#" class="section-button">Cable Machine</a>
+        </div>
+    </div>
+
+    <!-- Apparel & Merchandise Section -->
+    <div class="apparel-section">
+        <h2 class="apparel-heading">Apparel & Merchandise</h2>
+
+        <div class="apparel-images">
+            <img src="images/running.jpg" alt="Running Apparel">
+            <img src="images/yoga.webp" alt="Yoga Apparel">
+            <img src="images/zumba.jpg" alt="Zumba Apparel">
+        </div>
+
+        <div class="apparel-buttons">
+            <a href="#" class="apparel-button">Running</a>
+            <a href="#" class="apparel-button">Yoga</a>
+            <a href="#" class="apparel-button">Zumba</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel2">
+            <div class="logo-footer">
+                <img src="images/fitness logo.png" alt="Fitness Logo">
+                <p>Prioritize your fitness goals</p>
+                <p>with our world class services</p>
+            </div>
+            <ul>
+                <p>Company</p>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+            </ul>
+            <ul>
+                <p>Help/FAQs</p>
+                <a href="#">Press</a>
+                <a href="#">Mobile</a>
+            </ul>
+            <ul>
+                <p>Program</p>
+                <a href="#">Plans</a>
+                <a href="#">Method</a>
+            </ul>
+
+            <!-- New "Popular Tags" section -->
+            <div class="popular-tags">
+                <h3>Popular Tags</h3>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Abs</div>
+                    <div class="tag-box blue-bg">Workout</div>
+                </div>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Nutritions</div>
+                    <div class="tag-box blue-bg">Boxing</div>
+                </div>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Trainers</div>
+                    <div class="tag-box blue-bg">Facilities</div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Add JavaScript for toggling the menu
+            document.querySelector('.menu-icon').addEventListener('click', function () {
+                document.querySelector('nav').classList.toggle('open');
+            });
+        </script>
+
+
+
+        <!----------------Copy right--------------------->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="endofpage">
+                <code>Made with ❤️ by Ritesh!</code>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

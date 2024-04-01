@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR with Image Slider</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul {
+            overflow: auto;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .navbar li {
+            display: inline-block;
+            margin: 13px 10px;
+        }
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: red;
+        }
+
+        /* Image Slider Styles */
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        /* Navigation Dots */
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 0 8px;
+            cursor: pointer;
+        }
+        .dot:checked {
+            background-color: #555;
+        }
+
+        /* Hide radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Automatic Slide */
+        .slider:hover .slides {
+            animation: slideAnimation 4s infinite;
+        }
+
+        @keyframes slideAnimation {
+            25% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <input type="radio" name="slider" class="dot" id="dot1" checked>
+        <div class="slides">
+            <div class="slide">
+                <img src="https://picsum.photos/id/237/200/300" alt="Slide 1">
+            </div>
+
+            <input type="radio" name="slider" class="dot" id="dot2">
+            <div class="slide">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="Slide 2">
+            </div>
+
+            <input type="radio" name="slider" class="dot" id="dot3">
+            <div class="slide">
+                <img src="https://picsum.photos/200/300?grayscale" alt="Slide 3">
+            </div>
+
+            <input type="radio" name="slider" class="dot" id="dot4">
+            <div class="slide">
+                <img src="https://picsum.photos/200/300/?blur" alt="Slide 4">
+            </div>
+        </div>
+
+        <div class="dots">
+            <label for="dot1"></label>
+            <label for="dot2"></label>
+            <label for="dot3"></label>
+            <label for="dot4"></label>
+        </div>
+    </div>
+</body>
+</html>

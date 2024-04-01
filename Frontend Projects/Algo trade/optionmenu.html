@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    nav {
+      background-color: #3498db;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      flex-direction: column;
+      background-color: #2980b9;
+      z-index: 1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .menu.show {
+      display: flex;
+    }
+
+    .menu li {
+      margin: 0;
+      text-align: center;
+      border-bottom: 1px solid #3498db;
+    }
+
+    .menu li:last-child {
+      border-bottom: none;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .menu li a:hover {
+      background-color: #3498db;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .menu {
+        top: 50px;
+        right: 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .menu-icon:focus + .menu {
+        display: flex;
+      }
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .content-container img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .content-container .text {
+      max-width: 400px;
+    }
+
+    .content-container h2 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content-container p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .content-container a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Welcome Everyone</h1>
+  <div class="menu-icon" tabindex="0" onclick="toggleMenu()">☰</div>
+  <ul class="menu" id="menu">
+    <li><a href="javascript:void(0);" onclick="toggleMenu()">Home</a></li>
+    <li><a href="javascript:void(0);" onclick="toggleMenu()">About Us</a></li>
+    <li><a href="javascript:void(0);" onclick="toggleMenu()">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div class="content-container">
+  <img src="your-image-url.jpg" alt="Your Image">
+  <div class="text">
+    <h2>Learn to Earn with Algo Trading</h2>
+    <p>Make smart investment decisions for your hard-earned money. Understand the top trends with free investment tips and tricks for your marketplace.</p>
+    <a href="#">Blog</a> | <a href="#">Knowledge Center</a> | <a href="#">Smart Money</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>

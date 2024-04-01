@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #44425A;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .form-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        form {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #FFA500;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #FFA500;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 0.8;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for mobile view */
+        @media (max-width: 767px) {
+            nav {
+                flex-direction: row;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+
+        /* Media query for tablet view */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            nav {
+                flex-direction: row;
+            }
+
+            form {
+                width: 70%;
+            }
+        }
+
+        /* Media query for laptop view */
+        @media (min-width: 1024px) {
+            body {
+                background-color: #fff;
+            }
+
+            nav {
+                flex-direction: row;
+            }
+
+            form {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Our Products</a>
+            </div>
+            <button class="form-button" onclick="toggleForm()">Form</button>
+        </nav>
+    </header>
+
+    <footer>
+        <form>
+            <h2>Registration Form</h2>
+
+            <!-- Name Input -->
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <!-- Email Input -->
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <!-- Password Input -->
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <input type="submit" value="Submit">
+            <p><a href="#">Go back to home page</a></p>
+            <p><a href="#">Existing user? Login here</a></p>
+            <button onclick="toggleForm()">Close Form</button>
+        </form>
+    </footer>
+
+    <script>
+        function toggleForm() {
+            var form = document.querySelector('form');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>

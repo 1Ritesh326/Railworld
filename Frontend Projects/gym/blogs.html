@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="blogs.css">
+</head>
+
+<body>
+    <header>
+        <img src="gymicon.jfif" alt="Icon Image" class="icon">
+    
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleNav()">
+        &#9776;
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="product.html">Products</a>
+        <a href="blogs.html">Blogs</a>
+    </nav>
+    
+    <a href="#" class="join-button" onclick="toggleForm()">Join Us</a>
+</header>
+
+    <!-- Form Container -->
+    <div class="form-container" id="joinForm">
+        <button class="close-button" onclick="toggleForm()">Close</button>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var form = document.getElementById("joinForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+
+        function submitForm() {
+            // Implement form submission logic here
+            // For now, just close the form
+            toggleForm();
+        }
+
+
+         /* Add your additional styling here */
+         
+
+        
+    </script>
+
+    <!-- Add your new section below -->
+    <div class="blog-section">
+        <img src="blog1.webp" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt leo a augue congue,
+                in condimentum tortor ultrices. Vestibulum quis elit ac elit interdum suscipit.
+                Suspendisse potenti. Vivamus id lectus non quam convallis tincidunt. Suspendisse nec justo
+                euismod,
+                dignissim turpis nec, feugiat est. Integer sit amet euismod mauris.
+            </p>
+            <p>
+                Integer rhoncus arcu eget felis ullamcorper, ut luctus leo fringilla.
+                Curabitur efficitur libero in tellus tincidunt fringilla.
+                Proin dapibus, libero vitae fringilla cursus, turpis felis semper ante, sit amet
+                feugiat nulla tellus ac velit.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 2: Benefits of Healthy Diet -->
+   
+<div class="benefits">
+    <div class="benefits-section">
+       
+        <ul class="benefits-list">
+            <h2>Benefits of Healthy Diet</h2>
+            <li>Increased Energy Levels</li>
+            <li>Improved Weight Management</li>
+            <li>Enhanced Mood and Mental Health</li>
+            <li>Stronger Immune System</li>
+            <li>Better Digestive Health</li>
+            <li>Reduced Risk of Chronic Diseases</li>
+        </ul>
+        <img src="healthydiet.jpg" alt="Healthy Diet Image" class="benefits-image">
+    </div>
+    </div>
+
+    <!-- Section 3: New Section -->
+    <div class="section-3">
+        <div class="section-3-content">
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nulla tincidunt leo a augue congue, in condimentum tortor ultrices.
+                Vestibulum quis elit ac elit interdum suscipit.
+                Suspendisse potenti. Vivamus id lectus non quam convallis tincidunt.
+                Suspendisse nec justo euismod, dignissim turpis nec, feugiat est.
+                Integer sit amet euismod mauris.
+            </p>
+            <p>
+                Integer rhoncus arcu eget felis ullamcorper, ut luctus leo fringilla.
+                Curabitur efficitur libero in tellus tincidunt fringilla.
+                Proin dapibus, libero vitae fringilla cursus, turpis felis semper ante, sit amet
+                feugiat nulla tellus ac velit.
+            </p>
+        </div>
+        <img src="blogsection3.jfif" alt="Section 3 Image" class="section-3-image">
+    </div>
+
+    <footer>
+        <div class="foot-panel2">
+            <div class="logo-footer">
+                <img src="fitness logo.png" alt="Fitness Logo">
+                <p>Prioritize your fitness goals</p>
+                <p>with our world class services</p>
+            </div>
+            <ul>
+                <p>Company</p>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+            </ul>
+            <ul>
+                <p>Help/FAQs</p>
+                <a href="#">Press</a>
+                <a href="#">Mobile</a>
+            </ul>
+            <ul>
+                <p>Program</p>
+                <a href="#">Plans</a>
+                <a href="#">Method</a>
+            </ul>
+
+            <!-- New "Popular Tags" section -->
+            <div class="popular-tags">
+                <h3>Popular Tags</h3>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Abs</div>
+                    <div class="tag-box blue-bg">Workout</div>
+                </div>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Nutritions</div>
+                    <div class="tag-box blue-bg">Boxing</div>
+                </div>
+                <div class="tag-line">
+                    <div class="tag-box yellow-bg">Trainers</div>
+                    <div class="tag-box blue-bg">Facilities</div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Add JavaScript for toggling the menu
+            document.querySelector('.menu-icon').addEventListener('click', function () {
+                document.querySelector('nav').classList.toggle('open');
+            });
+        </script>
+
+
+
+        <!----------------Copy right--------------------->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="endofpage">
+                <code>Made with ❤️ by Ritesh!</code>
+            </div>
+        </footer>
+
+
+
+    </body>
+    </html>

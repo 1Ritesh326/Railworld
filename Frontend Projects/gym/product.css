@@ -1,0 +1,225 @@
+/* Add styles specific to this page */
+body {
+    margin: 0;
+    color: #dddddd;
+    /* Remove default margin */
+}
+
+/* New section styles */
+.nutrition-section {
+    background-image: url('images/productbackround1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.nutrition-heading {
+    font-size: 24px;
+    text-decoration: underline;
+    color: rgb(15, 249, 46);
+}
+
+.nutrition-images {
+    margin-top: 20px;
+}
+
+.nutrition-images img {
+    width: 200px;
+    /* Adjust image size as needed */
+    margin: 0 10px;
+}
+
+.nutrition-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 42px;
+    margin-right: 42px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: #244a63;
+    text-align: center;
+    padding: 120px 0;
+    color: rgb(21, 4, 4);
+ background-image: url(images/productbackround2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-heading {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.section-images {
+    margin-top: 20px;
+}
+
+.section-images img {
+    width: 200px;
+    /* Adjust image size as needed */
+    margin: 0 10px;
+}
+
+.section-buttons {
+    margin-top: 20px;
+}
+
+.section-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 42px;
+    margin-right: 42px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Apparel & Merchandise Section */
+.apparel-section {
+    background: rgba(255, 255, 255, 0.9);
+    background-image: url('images/apparelbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.apparel-heading {
+    font-size: 24px;
+    text-decoration: underline;
+    color: rgb(238, 138, 31);
+}
+
+.apparel-images {
+    margin-top: 20px;
+}
+
+.apparel-images img {
+    width: 200px;
+    /* Adjust image size as needed */
+    margin: 0 10px;
+}
+
+.apparel-buttons {
+    margin-top: 20px;
+}
+
+.apparel-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 79px;
+    margin-right: 68px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #081a25;
+}
+
+.foot-panel2 {
+    background-color: #524D4D;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -15px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.endofpage {
+    margin-left: 550px;
+}
+
+.foot-panel2 img {
+    width: 250px;
+    margin-bottom: -95px;
+    margin-top: -80px;
+}
+
+.foot-panel2 p {
+    margin-top: 1px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.tag-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-box {
+    flex-grow: 1;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    color: #fff;
+    /* text color */
+
+}
+
+.yellow-bg {
+    background-color: yellow;
+    color: black;
+}
+
+.blue-bg {
+    background-color: #3498db;
+    /* blue color */
+}
+
+/* ===================================== Medium size mobile ================================ */
+
+@media only screen and (min-width:481px) and (max-width:767px){
+   
+}
+
+/* ===================================== Large size mobile ================================ */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* ===================================== Tablet size  ================================ */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* ===================================== Laptop size  ================================ */
+
+@media only screen and (min-width: 992px) and (max-width:1199px)
+{}
+
+/* ===================================== Laptop Large size  ================================ */
+
+@media only screen and (min-width:1200px) and (max-width:1439px){
+
+}
+
+/* ===================================== 4k  size  ================================ */
+
+@media only screen and (min-width:1440px){}

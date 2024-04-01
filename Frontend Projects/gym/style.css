@@ -1,0 +1,686 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 24, 20);
+}
+
+header {
+    background-color: rgb(50, 19, 19);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+.join-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #ffcc00;
+}
+
+.icon {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Hide navigation links on small screens */
+    nav a {
+        display: none;
+    }
+
+    /* Show hamburger icon on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* Style for the navigation links in mobile view */
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
+.background-image {
+    background-image: url('images/backgroundimage.webp');
+    /* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Adjust the height to cover the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* Text color for content on top of the background image */
+    text-align: center;
+    position: relative;
+}
+
+.left-section {
+    background-color: rgba(71, 30, 30, 0.5);
+    /* Red tint with 50% transparency */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 150px;
+    text-align: left;
+    max-width: 400px;
+    /* Adjust the width as needed */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+}
+
+.left-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.left-section .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.left-section .button {
+    background-color: yellow;
+    border: 2px solid white;
+    color: rgb(15, 11, 11);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.left-section .button:hover {
+    background-color: #333;
+}
+
+/* Form styling */
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ccc;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.fitness-section {
+    background-color: rgb(115, 36, 36);
+    padding: 50px;
+    text-align: center;
+}
+
+.fitness-section h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-style: oblique;
+
+}
+
+.fitness-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.fitness-icon-section {
+    flex-basis: calc(33.3333% - 40px);
+    margin-bottom: 20px;
+}
+
+.fitness-icon-section img {
+    max-width: 50px;
+    margin-bottom: 5px;
+}
+
+.fitness-icon-section p {
+    color: white;
+    font-size: 14px;
+}
+
+.vertical-line {
+    border-left: 2px solid white;
+    height: 150px;
+    margin: 0 20px;
+}
+
+.horizontal-line {
+    border-top: 2px solid white;
+    width: 90%;
+
+}
+
+.subscription-section {
+    background-image: url('images/backgroundimage1.jpg');
+    /* Replace with your actual black background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.subscription-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.subscription-box {
+    background-color: rgba(133, 132, 132, 0.5);
+    /* Black background with 70% transparency */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(33.3333% - 40px);
+    box-sizing: border-box;
+}
+
+.subscription-box h3 {
+    color: yellow;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.subscription-section h2 {
+    color: yellow;
+    font-size: 24px;
+    margin-bottom: 90px;
+    font-style: oblique;
+}
+
+.subscription-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.subscription-box span {
+    font-size: 20px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.subscription-box button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-box button:hover {
+    background-color: #ffcc00;
+}
+
+.equipment-section {
+    background-color: rgb(51, 51, 51);
+    /* Dark gray background color */
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.equipment-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.equipment-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with 70% transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-basis: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.equipment-box img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    /* Added transition property */
+}
+
+.equipment-box:hover img {
+    transform: scale(1.1);
+    /* Zoom in effect on hover */
+}
+
+.equipment-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.success-section {
+    background-color: #2c3e50;
+    /* Dark background color */
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.success-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.success-box1 {
+    background-color: rgba(93, 83, 83, 0.9);
+    /* White background with 90% transparency */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 23px;
+    flex-basis: calc(35.3333% - 150px); 
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.success-box1 img {
+    /* max-width: 90%;
+    max-height: 10%; */
+    width: 260px;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.success-box1:hover {
+    transform: scale(1.05);
+    /* Zoom in effect on hover */
+}
+
+.success-box1 h3 {
+    font-family: 'Roboto', sans-serif;
+    /* Example font style */
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.success-box1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+   
+}
+
+/* Success box 2 */
+.success-box2 {
+    background-color: rgba(93, 83, 83, 0.9);
+    /* White background with 90% transparency */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(35.3333% - 90px); 
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.success-box2 img {
+    /* max-width: 90%;
+    max-height: 10%; */
+    width: 260px;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-top: 1px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.success-box2:hover {
+    transform: scale(1.05);
+    /* Zoom in effect on hover */
+}
+
+.success-box2 h3 {
+    font-family: 'Roboto', sans-serif;
+    /* Example font style */
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.success-box2 p {
+    font-size: 16px;
+    line-height: 1.6;
+   
+}
+
+/* Sucess box 3 */
+
+.success-box3 {
+    background-color: rgba(93, 83, 83, 0.9);
+    /* White background with 90% transparency */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(35.3333% - 90px); 
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.success-box3 img {
+    /* max-width: 90%;
+    max-height: 10%; */
+    width: 260px;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-top: 1px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.success-box3:hover {
+    transform: scale(1.05);
+    /* Zoom in effect on hover */
+}
+
+.success-box3 h3 {
+    font-family: 'Roboto', sans-serif;
+    /* Example font style */
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.success-box3 p {
+    font-size: 16px;
+    line-height: 1.6;
+   
+}
+
+
+.footer {
+    background-color: #081a25;
+    /* Blue background color */
+    color: #ecf0f1;
+    /* Text color */
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer-icon:hover {
+    color: #2c3e50;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #2c3e50;
+}
+
+/* SECTION 4 */
+.section-4 {
+    /* background-color: white; */
+    padding: 20px;
+    background-color: #558ec3;
+}
+
+.section-4 .section-4-container {
+    /* border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .section-4-container p {
+    margin: 4px;
+    font-size: 14px;
+}
+
+.section-4 .section-4-container button {
+    width: 300px;
+    border: none;
+    background-color: var(--amazon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+/* footer {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    color: rgb(39, 24, 24);
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+footer {
+    margin-top: 15px;
+    background-color: #081a25;
+}
+
+.foot-panel2 {
+    background-color: #524D4D;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -15px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.endofpage {
+    margin-left: 550px;
+}
+
+.foot-panel2 img {
+    width: 250px;
+    margin-bottom: -95px;
+    margin-top: -80px;
+}
+
+.foot-panel2 p {
+    margin-top: 1px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.tag-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-box {
+    flex-grow: 1;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    color: #fff;
+    /* text color */
+
+}
+
+.yellow-bg {
+    background-color: yellow;
+    color: black;
+}
+
+.blue-bg {
+    background-color: #3498db;
+    /* blue color */
+}
+
+@media screen and (max-width: 320px) {
+    nav a {
+        display: none;
+    }
+
+    nav a.menu-icon {
+        display: block;
+    }
+
+    nav.open a {
+        display: block;
+    }
+}
+
+/* ===================================== Medium size mobile ================================ */
+
+@media only screen and (min-width:481px) and (max-width:767px){
+   
+}
+
+/* ===================================== Large size mobile ================================ */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* ===================================== Tablet size  ================================ */
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* ===================================== Laptop size  ================================ */
+
+@media only screen and (min-width: 992px) and (max-width:1199px)
+{}
+
+/* ===================================== Laptop Large size  ================================ */
+
+@media only screen and (min-width:1200px) and (max-width:1439px){
+
+}
+
+/* ===================================== 4k  size  ================================ */
+
+@media only screen and (min-width:1440px){}
