@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif; 
+}
+.showcase .navbar-top{
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    background-color:#97144D;
+    top: 0;
+    left: 0;
+}
+.showcase .left{
+    display: flex;
+    list-style: none;
+}
+.showcase .left li a{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+}
+.showcase .left li a:hover{
+    color: yellow;
+}
+.showcase .right{
+    display: flex;
+    list-style: none;
+}
+.showcase .right li a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+.showcase .right li a:hover{
+    color: yellow;
+}
+/* /bottom navigation/ */
+.showcase .navbar-bottom{
+    width: 100%;
+    background: #cfcfcf;
+    padding: 25px 95px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+
+.showcase .navbar-bottom .brand-left{
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.showcase .navbar-bottom .menu-right{
+    display: flex;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+.showcase .navbar-bottom .menu-right a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    color: #1A1B1E;
+    transition: all 0.5s ease;
+}
+.showcase .navbar-bottom .menu-right a:hover{
+    color: yellow;
+}
+.banner img{
+    width: 100%;
+    
+    
+}
+.banner h1{
+    text-align: center;
+}
+.banner-v{
+    margin: 50px auto;
+    width: 100%;
+}
+
+.banner-v img{
+    max-width: 500px;
+    float: left;
+    border: 3px solid#fff;
+    border-radius: 10px;
+
+    margin-right: 80px;
+}
+.banner-v .text h1{
+    font-size: 25px;
+}

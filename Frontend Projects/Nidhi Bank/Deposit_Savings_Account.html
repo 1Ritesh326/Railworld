@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Deposit Savings Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ---------------Navbar----------------- */
+        nav {
+            background-color: #97144D;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            border: none;
+            padding: 8px;
+            padding-left: 29px;
+            margin-right: 10px;
+            width: 250px;
+            color: black;
+        }
+
+        .search-box svg {
+            fill: black;
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 5px;
+        }
+
+        .search-icon-right svg {
+            fill: black;
+            width: 1.5em;
+            height: 1.5em;
+            margin-left: 35px;
+        }
+
+        .navbar-text {
+            margin-right: 20px;
+        }
+
+        .language-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .rupay-card,
+        .unclaimed-account,
+        .feedback {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        svg {
+            fill: #ffffff;
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 5px;
+        }
+
+        .search-icon {
+            margin-left: -296px;
+            margin-right: 190px;
+        }
+
+        /* ----------------------logo section------------------ */
+        .logo-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            /* Background color for the new section */
+        }
+
+        .logo {
+            width: 150px;
+            margin-left: 20px;
+            /* Adjust the width of the logo as needed */
+        }
+
+        .icon-and-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-image {
+            width: 30px;
+            /* Adjust the width of the icon image as needed */
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            margin-left: 12px;
+            padding-right: 5px;
+            /* Set the text color to black */
+        }
+
+
+
+        /* ----------------image section-------------- */
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .rupay-heading {
+            position: absolute;
+            top: 280px;
+            left: 40px;
+            background-color: #97144D;
+            color: white;
+            padding: 10px;
+            padding-right: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        /* Additional Section Styles */
+        .additional-section {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .white-box {
+            width: 27%;
+            height: 70%;
+            background: white;
+            border: 1.51px rgba(0, 0, 0, 0.69) solid;
+            margin-right: 20px;
+            /* Add margin to separate white-box and additional-text */
+        }
+
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.69);
+        }
+
+        .link-item svg {
+            margin-right: 5px;
+            fill: black;
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        .box-heading {
+
+            width: 120%;
+            height: 10%;
+            color: black;
+            font-size: 25.81px;
+            font-family: Poppins;
+            font-weight: 400;
+            word-wrap: break-word;
+            margin-left: 10px;
+            margin-top: -10px;
+            margin-bottom: -10px;
+
+        }
+
+        .additional-text {
+            width: calc(100% - 60px);
+            /* Adjust the width as needed, considering padding */
+            padding: 10px;
+            color: black;
+            font-size: 28px;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-right: 10px;
+    margin-top: -43px;
+    font-size: 25px;
+        }
+
+
+
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 48%;
+            /* Adjust width as needed */
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .box h2 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            padding-left: 30px;
+        }
+
+        /* ------------footer------------ */
+        /* Styles for the footer */
+        /* Footer styles */
+        footer {
+            background-color: #D9D9D9;
+            color: black;
+            padding: 20px;
+        }
+
+        .footer-links {
+            font-size: 28px;
+            font-family: Poppins;
+            margin-bottom: 5px;
+            margin-top: -5px;
+            font-weight: 500;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+
+        .footer-links span {
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .footer-info {
+            background-color: #A12C5F;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: -22px;
+            padding: 20px;
+            width: 100%;
+            /* Make the section take full page width */
+        }
+
+        .left-info {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .heading {
+            font-size: 35px;
+            margin-right: 35px;
+        }
+
+
+        .right-info {
+            width: 30%;
+            text-align: right;
+        }
+
+        .left-info p {
+            margin: 0 0 10px 0;
+            color: white;
+            font-size: 30px;
+            font-weight: 500;
+            word-wrap: break-word
+        }
+
+        .logo1,
+        .qr-code {
+            width: auto;
+            max-height: 100px;
+            /* Adjust the maximum height of the images */
+            margin-right: 10px;
+        }
+
+        .bottom p {
+            font-size: 25px;
+            margin-bottom: -10px;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search your nearest branch...">
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="search-icon-right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="language-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
+                </path>
+            </svg>
+            <div>Language</div>
+        </div>
+
+        <div class="language-box">
+            <div>EN</div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="rupay-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M22.0049 9.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V9.99979H22.0049ZM22.0049 7.99979H2.00488V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V7.99979ZM15.0049 15.9998V17.9998H19.0049V15.9998H15.0049Z">
+                </path>
+            </svg>
+            <div>RUPAY CARD OFFER</div>
+        </div>
+
+        <div class="unclaimed-account">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M21 9V20.9925C21 21.5511 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.44694 2 3.99826 2H14V8C14 8.55228 14.4477 9 15 9H21ZM21 7H16V2.00318L21 7ZM8 7V9H11V7H8ZM8 11V13H16V11H8ZM8 15V17H16V15H8Z">
+                </path>
+            </svg>
+            <div>UNCLAIMED ACCOUNT</div>
+        </div>
+
+        <div class="feedback">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M21 8V20.9932C21 21.5501 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.4487 2 4.00221 2H14.9968L21 8ZM19 9H14V4H5V20H19V9ZM8 7H11V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z">
+                </path>
+            </svg>
+            <div>FEEDBACK</div>
+        </div>
+    </nav>
+
+    <!-- ------------------logo-section------------- -->
+
+    <div class="logo-section">
+        <img src="Assets_Nidhi_Banking/LOGO.png" alt="Logo" class="logo">
+        <div class="icon-and-links">
+            <img src="Assets_Nidhi_Banking/HomeVector.png" alt="Icon" class="icon-image">
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Advances</a></li>
+                <li><a href="#">Deposits</a></li>
+                <li><a href="#">Interest</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- ---------------------------------bg image section----------------- -->
+    <!-- New Section -->
+    <div class="image-section">
+        <div class="rupay-heading">Saving-Account</div>
+        <img src="Assets_Nidhi_Banking/Saving-Account.jpg" alt="Rupay Debit Card Image"
+            style="width: 100%; height: 350px; object-fit: cover;">
+    </div>
+
+
+
+
+    <!-- New Section -->
+    <div class="additional-section">
+        <div class="white-box">
+            <div class="link-container">
+                <div class="link-item" style="background-color: #A12C5F;">
+                    <div class="box-heading" style="color: white;">Savings Account</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path style="fill: white;"
+                            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                        </path>
+                    </svg>
+
+
+                </div>
+                <!-- Repeat the structure for each link item -->
+                <div class="link-item">
+                    <!-- SVG icon -->
+                    <div class="box-heading">Current Account</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="link-item">
+                    <!-- SVG icon -->
+                    <div class="box-heading">Fixed Account</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="link-item">
+                    <!-- SVG icon -->
+                    <div class="box-heading">Recurring Deposit</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="link-item">
+                    <!-- SVG icon -->
+                    <div class="box-heading">Deposit Calculator</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="additional-text">
+            <ul>
+                <li>We offer 4% Interest on Savings Bank Deposit as per RBI's Directive..</li>
+                <li>Customer has to maintain minimum balance or Rs.1000/- for Cheque book facility.</li>
+                <li>We also open zero balance saving account with certain conditions/ limited transaction.</li>
+                <li>We offer nomination facility for all deposit accounts.</li>
+                <li>Customer can open single/joint account and that account can jointly,operate as per instruction like
+                    Any one, Jointly, Any two Jointly either or survivor etc.</li>
+                <li>Customer can open Savings A/c for his/her minor children.</li>
+                <li>We offer Computerized passbook to our Account holders.</li>
+                <li>We are member of Deposit Insurance and Credit Guarantee Scheme in which customers deposits are
+                    insured up to Rs. 5 Lac.</li>
+            </ul>
+            <!-- New Section -->
+            <div class="section-heading">
+                <div class="box" style="background-color: #97144D;">
+                    <h2>Rules & Regulation Details</h2>
+                </div>
+                <div class="box" style="background-color: #706c6c;">
+                    <h2>Requirement Details</h2>
+                </div>
+            </div>
+
+            <ul style="border: 1px solid black;">
+               <li>Every Depositor must have to fulfill KYC norms as per RBI directive.</li>
+               <li>The Customer has to give all the valid proof under KYC norms at the time of opening an account as per RBI Guideline.</li>
+               <li>Guardian can open Minor's Savings Account. Birth Proof of Children is required.</li>
+               <li>The Bank's management having right to close the account after notice if account holder do not keep sufficient balance to clear inward cheque or ECS.</li>
+               <li>The Customer must have to check his/her chequebook & passbook in his custody. The bank is not responsible for any misuse of chequebook or passbook</li>
+               <li>Interest on savings deposit is calculated on daily balances as per RBI's Directive</li>
+               <li>chequebook charges will be be chargeble</li>
+               <li>The passbook should be accompanied with the withdrawal form</li>
+               <li>The Customer without chequebook facility will be given withdrawal form at the time of payment. the withdrawalform will be given to the account holder only and only at the time of payment</li>
+                
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- ----------------footer-------------- -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">HOME</a>
+            <span>|</span>
+            <a href="#">BANK HISTORY</a>
+            <span>|</span>
+            <a href="#">EMI CALCULATOR</a>
+            <span>|</span>
+            <a href="#">DEPOSIT CALCULATOR</a>
+            <span>|</span>
+            <a href="#">PRIVACY POLICY</a>
+        </div>
+        <div class="footer-info">
+            <div class="left-info">
+                <p><span class="heading">Address:</span> SO-15, 3rd floor, Magneto Offizo, Jivan Vihar, Labhandih,
+                    ㅤㅤㅤㅤㅤㅤㅤRaipur, Chhattisgarh 492001,</p>
+                <p><span class="heading">Mobile:</span> 25857901 / 25861907 / 25851333</p>
+                <p><span class="heading">Mail us:</span> info@company name.co.in</p>
+                <p>Company Name Pvt Ltd. is registered with DICGC (<a
+                        href="https://www.dicgc.org">https://www.dicgc.org</a>)</p>
+            </div>
+
+            <div class="right-info">
+                <img src="Assets_Nidhi_Banking/QR.png" alt="Logo" class="logo1">
+                <img src="Assets_Nidhi_Banking/DICGC.png" alt="QR Code" class="qr-code">
+            </div>
+        </div>
+        <div class="bottom">
+            <p>@Company Name Pvt Ltd. All Rights are Reserved | Powered By : Railworld India pvt ltd</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
